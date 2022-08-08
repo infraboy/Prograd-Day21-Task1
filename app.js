@@ -14,4 +14,4 @@ app.get('/',(req,res)=>{
 app.get('/sample',(req,res)=>{
     res.send("Sample Express");
 });
-app.listen(1235,()=>console.log("Expess Server started at port 1235"));
+app.listen(process.env.PORT || 1235,()=>console.log("Expess Server started at port 1235"));
